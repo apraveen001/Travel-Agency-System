@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Execute SQL{% endblock %}
+
+{% block content %}
+    <h2>Execute SQL Command or Script</h2>
+    <form method="post">
+        <textarea name="sql_command" rows="10" cols="80" placeholder="Enter SQL command(s) here...">{{ sql_command }}</textarea>
+        <br>
+        <button type="submit" name="action" value="execute_query">Execute Query (SELECT)</button>
+        <button type="submit" name="action" value="execute_script">Execute Script (Multiple Statements)</button>
+    </form>
+
+    {% if error %}
+        <div class="error">Error: {{ error }}</div>
+    {% endif %}
+
+    {% if result is not none %}
+        <h3>Query Result:</h3>
+        {% if result %}
+            <table>
+                <thead>
+                    <tr>
+                        {% for col in result[0].keys() %}
+                            <th>{{ col }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in result %}
+                        <tr>
+                            {% for value in row.values() %}
+                                <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>Query executed successfully, but returned no rows.</p>
+        {% endif %}
+    {% endif %}
+{% endblock %}

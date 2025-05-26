@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Passenger Itinerary - {{ passenger.Name }}{% endblock %}
+
+{% block content %}
+<h1>Itinerary for {{ passenger.Name }}</h1>
+
+<div class="card mb-3">
+    <div class="card-header">Passenger Details</div>
+    <div class="card-body">
+        <p><strong>ID:</strong> {{ passenger.PassengerID }}</p>
+        <p><strong>Name:</strong> {{ passenger.Name }}</p>
+        <p><strong>Gender:</strong> {{ passenger.Gender if passenger.Gender else 'N/A' }}</p>
+        <p><strong>Age:</strong> {{ passenger.Age if passenger.Age else 'N/A' }}</p>
+        <p><strong>Email:</strong> {{ passenger.Email if passenger.Email else 'N/A' }}</p>
+        <p><strong>Phone:</strong> {{ passenger.Phone if passenger.Phone else 'N/A' }}</p>
+    </div>
+</div>
+
+<h2>Bookings</h2>
+{% if bookings %}
+    {% for booking in bookings %}
+        <div class="card mb-4">
+            <div class="card-header">
+                Booking ID: {{ booking.BookingID }} ({{ booking.Status }}) - {{ booking.GroupName if booking.GroupName else 'Individual' }} - {{ booking.Purpose }} Trip
+            </div>
+            <div class="card-body">
+                <p><strong>Booking Date:</strong> {{ booking.BookingDate.strftime('%Y-%m-%d %H:%M') }}</p>
+                <p><strong>Total Cost:</strong> ${{ "%.2f"|format(booking.TotalCost) if booking.TotalCost else 'N/A' }}</p>
+                {% if booking.AgentName %}<p><strong>Agent:</strong> {{ booking.AgentName }}</p>{% endif %}
+
+                <h5 class="mt-3">Accommodations</h5>
+                {% if booking.accommodations %}
+                    <ul class="list-group">
+                        {% for acc in booking.accommodations %}
+                            <li class="list-group-item">
+                                <strong>{{ acc.Name }} ({{ acc.Type }})</strong> in {{ acc.City }}, {{ acc.Country }}<br>
+                                Check-in: {{ acc.CheckInDate.strftime('%Y-%m-%d') }}, Check-out: {{ acc.CheckOutDate.strftime('%Y-%m-%d') }}<br>
+                                Cost: ${{ "%.2f"|format(acc.Cost) if acc.Cost else 'N/A' }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No accommodations booked for this trip.</p>
+                {% endif %}
+
+                <h5 class="mt-3">Transportation</h5>
+                {% if booking.transportations %}
+                    <ul class="list-group">
+                        {% for trans in booking.transportations %}
+                            <li class="list-group-item">
+                                {% if trans.TransportType == 'Flight' %}
+                                    <strong>Flight {{ trans.FlightNumber }}</strong> ({{ trans.Carrier }})<br>
+                                    From: {{ trans.SourceCity }}, {{ trans.SourceCountry }} To: {{ trans.DestCity }}, {{ trans.DestCountry }}<br>
+                                    Depart: {{ trans.DepartureDateTime.strftime('%Y-%m-%d %H:%M') }}, Arrive: {{ trans.ArrivalDateTime.strftime('%Y-%m-%d %H:%M') }} (Class: {{ trans.Class }})<br>
+                                    Fare: ${{ "%.2f"|format(trans.Fare) if trans.Fare else 'N/A' }}
+                                {% elif trans.TransportType == 'Car Rental' %}
+                                    <strong>Car Rental</strong> ({{ trans.Company }}) - {{ trans.CarType }}<br>
+                                    Pickup: {{ trans.PickupCity }}, {{ trans.PickupCountry }} on {{ trans.PickupDateTime.strftime('%Y-%m-%d %H:%M') }}<br>
+                                    Dropoff: {{ trans.DropoffCity }}, {{ trans.DropoffCountry }} on {{ trans.DropoffDateTime.strftime('%Y-%m-%d %H:%M') }}<br>
+                                    Rent: ${{ "%.2f"|format(trans.Rent) if trans.Rent else 'N/A' }}
+                                {% elif trans.TransportType == 'Cruise' %}
+                                    <strong>Cruise: {{ trans.CruiseName }}</strong> ({{ trans.Line }})<br>
+                                    From: {{ trans.SourceCity }}, {{ trans.SourceCountry }} To: {{ trans.DestCity }}, {{ trans.DestCountry }}<br>
+                                    Depart: {{ trans.DepartureDate.strftime('%Y-%m-%d') }}, Return: {{ trans.ReturnDate.strftime('%Y-%m-%d') }}<br>
+                                    Fare: ${{ "%.2f"|format(trans.Fare) if trans.Fare else 'N/A' }}
+                                {% else %}
+                                    <strong>{{ trans.TransportType }}</strong> - Details unavailable in this view.
+                                {% endif %}
+                                <br>Cost: ${{ "%.2f"|format(trans.Cost) if trans.Cost else 'N/A' }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No transportation booked for this trip.</p>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>This passenger has no bookings.</p>
+{% endif %}
+
+<a href="{{ url_for('view_passengers') }}" class="btn btn-secondary mt-3">Back to Passengers List</a>
+
+{% endblock %}
+

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Available Options{% endblock %}
+
+{% block content %}
+<h1>Available Accommodations and Flights</h1>
+
+<div class="mt-4">
+    <h2>Accommodations (Hotels, Resorts, etc.)</h2>
+    {% if accommodations_rows %}
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    {% for col in accommodations_columns %}
+                        <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in accommodations_rows %}
+                    <tr>
+                        {% for cell in row %}
+                            <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No accommodations found.</p>
+    {% endif %}
+</div>
+
+<div class="mt-5">
+    <h2>Flights</h2>
+    {% if flights_rows %}
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    {% for col in flights_columns %}
+                        <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in flights_rows %}
+                    <tr>
+                        {% for cell in row %}
+                            <td>{{ cell }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No flights found.</p>
+    {% endif %}
+</div>
+
+{% endblock %}
+

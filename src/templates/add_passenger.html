@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Add New Passenger{% endblock %}
+
+{% block content %}
+<h1>Add New Passenger</h1>
+
+<form method="POST" action="{{ url_for("add_passenger") }}">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select class="form-control" id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" class="form-control" id="age" name="age" min="1" max="120">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Passenger</button>
+</form>
+{% endblock %}
+

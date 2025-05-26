@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Travel Agency Project{% endblock %}</title>
+    <!-- Using Bootstrap for better styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="{{ url_for("index") }}">Travel Agency DB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for("index") }}">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSchema" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Schema & Data
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSchema">
+                        <a class="dropdown-item" href="{{ url_for("view_schema") }}">View Schema</a>
+                        <a class="dropdown-item" href="{{ url_for("view_populate") }}">View Population Data</a>
+                        <a class="dropdown-item" href="{{ url_for("view_queries") }}">View Complex Queries</a>
+                        <a class="dropdown-item" href="{{ url_for("execute_sql") }}">Execute SQL</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownView" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        View Data
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownView">
+                        <a class="dropdown-item" href="{{ url_for("view_locations") }}">Locations</a>
+                        <a class="dropdown-item" href="{{ url_for("view_passengers") }}">Passengers</a>
+                        <a class="dropdown-item" href="{{ url_for("view_employees") }}">Employees</a>
+                        <a class="dropdown-item" href="{{ url_for("view_bookings") }}">Bookings</a>
+                        <a class="dropdown-item" href="{{ url_for("view_accommodations") }}">Accommodations</a>
+                        <a class="dropdown-item" href="{{ url_for("view_flights") }}">Flights</a>
+                        <a class="dropdown-item" href="{{ url_for("view_car_rentals") }}">Car Rentals</a>
+                        <a class="dropdown-item" href="{{ url_for("view_cruises") }}">Cruises</a>
+                    </div>
+                </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTransactions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transactions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownTransactions">
+                        <a class="dropdown-item" href="{{ url_for("add_passenger") }}">Add Passenger</a>
+                        <a class="dropdown-item" href="{{ url_for("available_options") }}">List Hotels & Flights</a>
+                        <!-- Passenger Itinerary is accessed via the Passengers list -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category if category != 'message' else 'info' }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">ISE 503 Course Project - Spring 2025</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
