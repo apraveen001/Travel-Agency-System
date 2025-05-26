@@ -1,0 +1,223 @@
+Danielle Thomas|8
+Rachel Burton|8
+Lisa Davis|7
+Kelly Murray|7
+Jeffrey Andrews|6
+Kelli Joseph|6
+Christina Powell|6
+Joseph Kemp|4
+Sarah Lucero|3
+Kimberly Soto|3
+Cheryl Carter PhD|3
+Bonnie Hensley|3
+Todd Franklin|3
+Sherry Dixon|3
+Mary Williams|0
+49|Advanced client-server instruction set Trip|9999.35|Jordan Mccormick
+40|Streamlined neutral productivity Trip|9960.65|Sean Barajas
+42||9863.94|Bruce Miller
+37|Multi-tiered radical Local Area Network Trip|9860.35|Tara Moore
+8|Realigned bi-directional structure Trip|9538.5|David Davis
+New Lauren|4.66666666666667
+Reesemouth|4.4
+Stephanieland|4.25
+Blackwellfort|4.2
+South Jasonville|4.0
+Russellchester|4.0
+East Lisa|4.0
+Mayoshire|3.8
+West Kari|3.61538461538462
+South Dawnhaven|3.25
+South Steven|3.2
+Port Elizabeth|3.0
+East Matthew|3.0
+Michaelfort|2.71428571428571
+New Samuelburgh|2.66666666666667
+Port Jasonville|2.5
+East Vanessa|2.5
+South Christineberg|2.4375
+New Michael|2.375
+Beltranburgh|2.35714285714286
+Christopherfurt|2.33333333333333
+Smithside|2.0
+Coxhaven|2.0
+Saraton|1.5
+Farrellmouth|1.5
+Wonghaven|1.0
+North Raymondberg|1.0
+Matthew Griffin
+Dawn Lee
+Harry Green
+Debra Jones
+Kelsey Thompson
+Michelle Mills
+Calvin Lewis
+David Davis
+Carl Benson
+Richard French
+Jason Johnson
+Christina Gonzalez
+Mr. James Walters DDS
+Mary Vega
+Nicole Jones
+Erica Chang
+Adriana Harvey
+Sean Barajas
+Jaime Johnson
+Dylan Ramirez
+Christopher Bryan
+Tara Joseph
+Shannon Andrews
+Alexandra Jacobson
+Jordan Mccormick
+Robert French
+Eric Murray
+James Olson
+Matthew Johnson
+Keith Young
+Bruce Miller
+Christopher Mckee
+Kristin Jacobs
+Lisa Ayala
+Dalton Johnson
+Erin Gonzales
+40|2025-04-29|Jordan Mccormick|
+40|2025-04-29|Sean Barajas|
+17|2025-04-22|Alexandra Jacobson|Suarezborough
+74|2025-04-22|Eric Murray|
+74|2025-04-22|Frederick Lee|
+74|2025-04-22|Keith Young|
+74|2025-04-22|Kelsey Thompson|
+24|2025-04-16|Erica Chang|
+51|2025-04-13|Christopher Bryan|Wesleymouth
+51|2025-04-13|Lisa Ayala|Wesleymouth
+51|2025-04-13|Richard French|Wesleymouth
+3|2025-04-03|Dylan Ramirez|
+3|2025-04-03|Erica Chang|
+3|2025-04-03|Sarah Flores|
+78|2025-03-30|Frederick Lee|
+78|2025-03-30|Jason Johnson|
+64|2025-03-15|Calvin Lewis|East Vanessa
+64|2025-03-15|Mary Vega|East Vanessa
+64|2025-03-15|Michelle Mills|East Vanessa
+64|2025-03-15|Nicole Jones|East Vanessa
+64|2025-03-15|Sean Barajas|East Vanessa
+49|2025-02-19|Jordan Mccormick|
+53|2025-02-19|Kelsey Thompson|East Matthew
+53|2025-02-19|Kelsey Thompson|New Michael
+50|2025-02-16|Debra Jones|
+50|2025-02-16|Kathy Contreras|
+50|2025-02-16|Robert French|
+6|2025-02-11|Jaime Johnson|Wonghaven
+6|2025-02-11|Jaime Johnson|Christopherfurt
+6|2025-02-11|Matthew Johnson|Wonghaven
+6|2025-02-11|Matthew Johnson|Christopherfurt
+77|2025-02-11|Mary Vega|Stephanieland
+77|2025-02-11|Tracy Solomon|Stephanieland
+26|2025-02-10|Bruce Miller|Reesemouth
+26|2025-02-10|Keith Young|Reesemouth
+26|2025-02-10|Shannon Andrews|Reesemouth
+73|2025-02-10|Harry Green|
+37|2025-02-09|Tara Moore|
+41|2025-02-04|Erica Chang|
+41|2025-02-04|Jordan Mccormick|
+21|2025-02-03|Matthew Griffin|Port Carrie
+38|2025-02-03|Dalton Johnson|South Jasonville
+38|2025-02-03|Dylan Ramirez|South Jasonville
+38|2025-02-03|Kristin Jacobs|South Jasonville
+38|2025-02-03|Robert French|South Jasonville
+34|2025-01-26|Debra Jones|
+34|2025-01-26|Matthew Griffin|
+2|2025-01-21|Calvin Lewis|
+2|2025-01-21|Dylan Ramirez|
+4|2025-01-17|Dalton Johnson|
+7|2025-01-14|Tammy Reynolds|
+62|2025-01-12|Jason Johnson|East Vanessa
+16|2024-12-29|Jordan Mccormick|
+47|2024-12-23|Harry Green|Port Elizabeth
+47|2024-12-23|Patrick Carter|Port Elizabeth
+47|2024-12-23|Zachary Mitchell|Port Elizabeth
+43|2024-12-21|Mr. James Walters DDS|Warrentown
+23|2024-12-16|Christopher Bryan|East Vanessa
+23|2024-12-16|Erin Gonzales|East Vanessa
+71|2024-12-08|James Olson|
+71|2024-12-08|Jordan Mccormick|
+71|2024-12-08|Mr. James Walters DDS|
+71|2024-12-08|Sean Barajas|
+35|2024-12-06|Shannon Andrews|New Samuelburgh
+35|2024-12-06|Shannon Andrews|Warrentown
+80|2024-12-03|Dawn Lee|
+80|2024-12-03|Sean Barajas|
+46|2024-11-28|Carl Benson|
+46|2024-11-28|Dylan Ramirez|
+46|2024-11-28|Shannon Andrews|
+45|2024-11-17|Christina Gonzalez|
+45|2024-11-17|Daniel Duran|
+14|2024-11-14|Dawn Lee|
+14|2024-11-14|Sean Barajas|
+14|2024-11-14|Tara Joseph|
+66|2024-11-11|Christopher Mckee|Warrentown
+66|2024-11-11|Dalton Johnson|Warrentown
+68|2024-11-07|Christopher Mckee|North Georgemouth
+68|2024-11-07|Michelle Mills|North Georgemouth
+60|2024-11-04|Christina Gonzalez|
+60|2024-11-04|Kristin Jacobs|
+60|2024-11-04|Shannon Andrews|
+Welch Inc Rentals|6695.49
+Johnson and Sons Rentals|6571.04
+Contreras-Hall Rentals|5354.35
+Joseph PLC Rentals|4092.75
+Maxwell Inc Rentals|3347.88
+Elliott Ltd Rentals|2336.04
+Cannon, Valdez and Hodges Rentals|1548.5
+Rios Group Rentals|1150.16
+Joseph Kemp|Christina Powell|Admin
+Joseph Kemp|Kelli Joseph|Admin
+Joseph Kemp|Rachel Burton|Admin
+Mary Williams|Cheryl Carter PhD|Agent
+Mary Williams|Danielle Thomas|Admin
+Mary Williams|Jeffrey Andrews|Agent
+Mary Williams|Kimberly Soto|Agent
+Mary Williams|Sarah Lucero|Agent
+Todd Franklin|Bonnie Hensley|Agent
+Todd Franklin|Kelly Murray|Admin
+Todd Franklin|Lisa Davis|Agent
+Todd Franklin|Sherry Dixon|Agent
+Adriana Harvey|61|Leisure
+Jordan Mccormick|67|Leisure
+David Davis|74|Leisure
+Sean Barajas|77|Leisure
+Tara Joseph|79|Leisure
+Kristin Jacobs|65|Leisure
+Carl Benson|74|Leisure
+Patrick Carter|73|Leisure
+Robert French|69|Leisure
+Christina Gonzalez|78|Leisure
+Nicole Jones|64|Leisure
+Williams, Espinoza and Howard Resort|Airbnb|0.15|Wesleymouth|Andorra
+Hall PLC Resort|Hostel|0.2|Port Carrie|Azerbaijan
+Hurst, Lloyd and Gonzalez Suites|Resort|0.2|Port Elizabeth|Barbados
+Thornton Group Inn|Airbnb|0.15|Port Elizabeth|Barbados
+Richardson, Manning and Smith Suites|Guesthouse|0.2|New Samuelburgh|Brazil
+Browning-Davis Resort|Airbnb|0.15|East Matthew|Chad
+Gross Group Resort|Airbnb|0.2|East Matthew|Chad
+Perez-Morris Inn|Airbnb|0.15|West Kari|Djibouti
+Rivera, Johnston and Rodriguez Resort|Resort|0.2|West Kari|Djibouti
+Powell, York and Gonzalez Hotel|Hostel|0.15|East Lisa|French Guiana
+Howard LLC Inn|Resort|0.2|Wonghaven|Greenland
+Murphy LLC Resort|Resort|0.15|Wonghaven|Greenland
+Scott, Luna and Cain Inn|Airbnb|0.15|Blackwellfort|Jamaica
+Yang-Moon Inn|Hotel|0.15|Blackwellfort|Jamaica
+Gonzales, Keller and Thompson Suites|Resort|0.2|Farrellmouth|Netherlands
+Ryan-Vaughn Inn|Resort|0.2|South Dawnhaven|Netherlands
+Soto, Duran and Kim Suites|Guesthouse|0.2|South Dawnhaven|Netherlands
+White-Wilson Hotel|Resort|0.15|South Dawnhaven|Netherlands
+Lee, Jones and Mccarthy Resort|Airbnb|0.15|Coxhaven|Niue
+Davis-Wade Suites|Airbnb|0.15|Beltranburgh|Russian Federation
+Frye-Holland Inn|Airbnb|0.2|Beltranburgh|Russian Federation
+White-Graves Resort|Resort|0.2|Christopherfurt|Saint Lucia
+Kelley and Sons Suites|Hotel|0.2|Russellchester|Saint Martin
+Clayton, Smith and Miller Hotel|Hotel|0.15|North Raymondberg|South Africa
+Brown, Clark and Gonzales Hotel|Resort|0.2|New Michael|Turks and Caicos Islands
+Howard-Rivera Suites|Resort|0.2|Port Jasonville|Zambia
+Donovan-Smith Suites|Hotel|0.15|South Christineberg|Zambia
